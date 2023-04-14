@@ -1,0 +1,1 @@
+contém os arquivos de script (JavaScript) que são usados no projeto.
