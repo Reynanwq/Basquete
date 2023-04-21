@@ -1,0 +1,9 @@
+-- TABELA CONTENDO MVP DE TODAS AS TEMPORADAS
+
+CREATE TABLE IF NOT EXISTS todos_mvp(
+	id INT NOT NULL PRIMARY KEY,
+    jogador_nome VARCHAR(100) NOT NULL,
+    mvp BIT NOT NULL,
+    qtd_mvp INT NOT NULL,
+    temporada_do_mvp VARCHAR(15) NOT NULL
+);

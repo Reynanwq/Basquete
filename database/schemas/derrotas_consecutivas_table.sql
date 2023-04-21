@@ -1,0 +1,7 @@
+-- TIMES COM MAIS DERROTAS CONSECUTIVAS NA NBA
+
+CREATE TABLE IF NOT EXISTS mais_derrotass_consecutivas(
+	id INT NOT NULL PRIMARY KEY,
+    franquia VARCHAR(50) NOT NULL,
+	derrotas_consecuticas INT NOT NULL
+);

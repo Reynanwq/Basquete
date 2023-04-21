@@ -1,0 +1,11 @@
+-- JOGADOR QUE MAIS JOVEM A ENTRAR EM QUADRA
+
+CREATE TABLE IF NOT EXISTS jogador_mais_jovem(
+	id INT NOT NULL PRIMARY KEY,
+    jogador VARCHAR(100) NOT NULL,
+	idade INT NOT NULL,
+    time_id INT NOT NULL,
+    FOREIGN KEY (time_id) REFERENCES times(id)
+);
+
+

@@ -1,0 +1,9 @@
+-- JOGADOR QUE MAIS DISPUTOU JOGOS
+
+CREATE TABLE IF NOT EXISTS jogador_jogos_disputados(
+	id INT NOT NULL PRIMARY KEY,
+    jogador VARCHAR(100) NOT NULL,
+	qtd_jogos INT NOT NULL
+);
+
+
