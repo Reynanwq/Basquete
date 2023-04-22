@@ -1,0 +1,19 @@
+-- TECNICO QUE FICOU MAIS TEMPO TREINANDO O MESMO TIME
+
+CREATE TABLE IF NOT EXISTS tecnico_mais_tempo(
+	id INT NOT NULL PRIMARY KEY,
+    tecnico_nome VARCHAR(100) NOT NULL,
+    anos INT NOT NULL,
+    temporadas VARCHAR(500) NOT NULL,
+    time_id INT NOT NULL,
+    FOREIGN KEY(time_id) REFERENCES times(id)
+);
+
+-- TECNICO MAIS JOVEM DA HISTÓRIA
+
+CREATE TABLE IF NOT EXISTS tecnico_jovem(
+	id INT NOT NULL PRIMARY KEY,
+    tecnico VARCHAR(500) NOT NULL,
+    idade INT NOT NULL,
+    ano DATE NOT NULL 
+); 
