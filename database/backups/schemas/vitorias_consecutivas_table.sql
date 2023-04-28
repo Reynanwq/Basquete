@@ -1,0 +1,7 @@
+-- TIMES COM MAIS VITORIAS CONSECUTIVAS NA NBA
+
+CREATE TABLE IF NOT EXISTS mais_vitorias_consecutivas(
+	id INT NOT NULL PRIMARY KEY,
+    franquia VARCHAR(50) NOT NULL,
+	vitoria_consecuticas INT NOT NULL
+);

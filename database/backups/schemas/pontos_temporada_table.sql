@@ -1,0 +1,9 @@
+-- TABELA DE TODAS AS TEMPORADAS DA NBA
+
+CREATE TABLE IF NOT EXISTS pontos_temporadas(
+	id INT NOT NULL PRIMARY KEY,
+    time_id INT NOT NULL,
+    temporada VARCHAR(10) NOT NULL,
+    pontos_total VARCHAR(10) NOT NULL,
+    FOREIGN KEY (time_id) REFERENCES times(id)
+);
